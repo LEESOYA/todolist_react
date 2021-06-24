@@ -1,0 +1,28 @@
+.input-form {
+  border-bottom: 1px solid #22b8cf;
+  padding: 1rem;
+  display: flex;
+}
+
+.input {
+  outline: none;
+  border: none;
+  flex: 1;
+  border-bottom: 1px solid #c5f6fa
+}
+
+.add-button {
+  background-color: #22b8cf;
+  color: white;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-left: 0.5em;
+}
+
+.add-button:hover {
+  background-color: #3bc9db;
+}
