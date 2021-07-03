@@ -4,15 +4,6 @@ import Form from './form';
 import TodoList from './todoList';
 
 class TodoTemplate extends Component {
-  addTodos = (_newTodo) => {
-    _newTodo && this.props.onAdd(_newTodo);
-  }
-
-  // handleCheck = () => {
-  //   // console.log(this.props._todos);
-  //   // console.log(this.props.todoData)
-  //   // alert('template alert')
-  // }
 
   render() {
     const todos = this.props.todoData;
@@ -23,13 +14,14 @@ class TodoTemplate extends Component {
         </header>
         <section className="form-wrapper">
           <Form 
-            onAdd={this.addTodos}  
+            onAdd={this.props.onAdd}  
           />
         </section>
         <section className="todos-wrapper">
           <TodoList
             todos={todos}
-            // onToggle={this.handleCheck}
+            onClickTodo={this.props.onClickTodo}
+            onRemove={this.props.onRemove}
           />
         </section>
       </div>

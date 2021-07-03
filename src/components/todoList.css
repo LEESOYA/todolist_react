@@ -29,6 +29,10 @@
   flex: 1 1;
 }
 
+.todo-complete { 
+  color:lightgray;
+  text-decoration: line-through;
+}
 
 .remove-mark {
   opacity: 0;
